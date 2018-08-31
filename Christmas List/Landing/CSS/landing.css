@@ -1,0 +1,42 @@
+/*Base Styles*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: 1em/1.5 "Josefin Sans", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+img {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+form {
+
+}
+
+/*Pseudo Classes*/
+
+
+/*Main Styles*/
+
+
+/*Layout Styles*/
+
+
+/*Floated Columns*/
+
+
+/*Float Clearfix*/
