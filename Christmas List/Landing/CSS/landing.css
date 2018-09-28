@@ -43,7 +43,14 @@ ul li {
 }
 
 form {
+	max-width: 552px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
 
+input {
+	width: 552px;
 }
 
 /*Pseudo Classes*/
@@ -105,6 +112,10 @@ a:visited {
 
 .main-footer {
 	margin-top: 50px;
+}
+
+.away-options {
+	margin: 20px 0px 13px 0px;
 }
 
 /*Floated Columns*/

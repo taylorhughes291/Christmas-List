@@ -19,21 +19,63 @@
 						</ul>
 					</nav>
 					<section id="input">
-						<form>
+						<form name="login">
 							Email:<br>
-							<input type="text" name="email"><br>
+							<input type="text" name="email" id="email"><br>
 							Password:<br>
-							<input type="text" name="password"><br>
+							<input type="password" name="password" id="password"><br>
 						</form>
 						<ul>
-							<li><a href="#">Submit</a></li>
-							<li><a href="#">Forgot Password?</a></li>
+							<li onclick="loginSubmit()"><a href="#">Submit</a></li>
+							<li onclick="forgotPassword()"><a href="#">Forgot Password?</a></li>
 						</ul>
 					</section>
 				</div>
 			<footer class = "main-footer">
 				<p><small>&copy; Cherboy Industries</small></p>
 			</footer>
-		</div>	
+		</div>
+		<script>
+			var loginAttempt = 0;
+			function loginSubmit() {
+				var email = document.forms[0].elements[0].value;
+				var password = document.forms[0].elements[1].value;
+				/* Initiate script to send email and password to the server side and check for a match. 
+						If a match exists, begin a session
+						If it does not match, alert user that their credentials don't match
+						If no email for the user has been found, alert user that that email does not exist
+						If user account has been locked out, initiate lockedOut() function */
+
+				console.log(email);
+				console.log(password);
+			}
+
+			function loginFailed() {
+				loginAttempt += 1;
+				if (loginAttempt === 5) {
+					/* Initiate script to server side to lock down user account for 10 minutes
+					   Render HTML above Email prompt showing "Your account has been locked out for 10 minutes. Please try again later."
+					   Send email to user asking if they are trying to log in - if yes continue, if no ask if they want account locked down," 
+					   After 10 minutes, unlock account on server side and take down the rendered temporary HTML
+					   Set loginAttempt = 0 after 10 minutes.*/
+				}
+			}
+
+			function lockedOut() {
+				/* Render HTML above Email prompt showing "Your account has been locked out for x minutes. Please try again later." 
+				   After x minutes, unlock account on server side and take down the rendered temporary HTML
+				   Set loginAttempt = 0 after x minutes. */
+			}
+
+			function forgotPassword() {
+				var forgotEmail = prompt("Please enter your email address you used to register with Wrapp'd:");
+				/* Initiate script to check server side if email has been found in database
+						If email could not be found, return message here alerting the user that email could not be found and offer a pathway to register
+
+						If email was found, send automated email and allow the user to create a new password. */
+				alert("We have emailed you at " + forgotEmail + " with instructions on how to change your password.");
+				console.log(forgotEmail);
+			}
+		</script>
 	</body>
 </html>
