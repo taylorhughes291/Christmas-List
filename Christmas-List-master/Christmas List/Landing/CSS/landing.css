@@ -1,0 +1,124 @@
+/*Base Styles*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: 1em/1.5 "Josefin Sans", Helvetica, Arial, sans-serif;
+	max-width: 100%
+	line-height: 1.5;
+	background: lightblue;
+}
+
+header {
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+ul li {
+	display: inline-block;
+	list-style-type: none;
+	width: 276px;
+	margin-left: 15px;
+	background: tomato;
+	font-size: 20px;
+	margin: 0 auto;
+	padding-top: 5px;
+	border-radius: 7px;
+}
+
+form {
+	max-width: 552px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+input {
+	width: 552px;
+}
+
+/*Pseudo Classes*/
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+/*Main Styles*/
+.main-header {
+
+}
+
+.slogan {
+
+}
+
+.big-logo {
+
+}
+
+.main-content {
+
+}
+
+.login-options {
+	text-align: center;
+	clear: both;
+}
+
+.opt1 {
+	margin-right: 10px;
+}
+
+.opt2 {
+	margin-left: 10px;
+}
+
+.main-header,
+.main-content,
+.main-footer {
+	text-align: center;
+}
+/*Layout Styles*/
+.slogan{
+	margin: 45px 0 15px 0;
+}
+
+.main-content p {
+	padding: 12px 0px 0px 0px;
+	max-width: 575px;
+	margin: 0 auto;
+}
+
+.main-footer {
+	margin-top: 50px;
+}
+
+.away-options {
+	margin: 20px 0px 13px 0px;
+}
+
+/*Floated Columns*/
+
+
+/*Float Clearfix*/

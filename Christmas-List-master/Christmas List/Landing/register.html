@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wrapp'd - Register</title>
+		<link rel="stylesheet" href="CSS/landing.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+			<header class="main-header">
+				<h3 class="slogan">Fill your holiday season with more cheer - for less money</h3>
+				<img class="big-logo" src="http://placeimg.com/573/410/nature" alt="Wrapp'd Logo">
+			</header>
+			<div class="main-content">
+				<section id="input">
+					<form>
+						Email:<br>
+						<input type="text" name="email"><br>
+						Set Password:<br>
+						<input type="password" name="password"><br>
+						Confirm Password:<br>
+						<input type="password" name="password-confirm">
+					</form>
+					<ul>
+						<li onclick="submitRegister()"><a href="#">Submit</a></li>
+						<li><a href="login.html">Login Page</a></li>
+					</ul>
+				</section>
+				</div>
+			<footer class="main-footer">
+				<p><small>&copy; Cherboy Industries</small></p>
+			</footer>
+		</div>
+		<script>
+			var pwContinue = 0;
+			function submitRegister() {
+				pwContinue = 1;
+				var email = document.forms[0].elements[0].value;
+				var password = document.forms[0].elements[1].value;
+				var passwordConfirm = document.forms[0].elements[2].value;
+
+				if (password !== passwordConfirm) {
+					alert("Your passwords do not match. Please make sure your passwords match and try again.");
+					pwContinue = 2;
+					document.forms[0].elements[1].value="";
+					document.forms[0].elements[2].value="";
+				}
+
+				/*
+				If pwContinue === 1, send variables in a package to the server.
+					If email already exists, send message back to user saying "Email already exists. Do you need to change your password? If yes, click here"
+					Else create a new user in database and log user in
+
+				*/
+
+				console.log(email);
+				console.log(password);
+				console.log(passwordConfirm);
+			}
+		</script>
+	</body>
+</html>
