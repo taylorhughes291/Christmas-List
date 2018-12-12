@@ -21,14 +21,14 @@ img {
 	max-width: 100%;
 }
 
-ul {
+.submit {
 	list-style-type: none;
 	padding: 0;
 	font-size: 24px;
 	margin-top: 20px;
 }
 
-ul li {
+.submit li {
 	display: inline-block;
 	list-style-type: none;
 	width: 276px;
@@ -65,6 +65,14 @@ nav li {
 
 h3 {
 	font-size: 30px;
+	margin: 0px;
+	padding: 10px;
+}
+
+h4 {
+	margin: 0px;
+	padding: 25px 0px 0px 10px;
+	font-size: 23px;
 }
 
 form {
@@ -107,29 +115,15 @@ a:visited {
 }
 
 .main-content {
-margin-top: 20px;
-width: 800px;
-margin: auto;
-padding-left: 9px;
-padding-right: 9px;
-}
-
-.opt1 {
-	margin-right: 10px;
-}
-
-.opt2 {
-	margin-left: 10px;
+	margin-top: 20px;
+	width: 800px;
+	margin: auto;
+	padding-left: 9px;
+	padding-right: 9px;
 }
 
 .main-header {
 	text-align: center;
-}
-
-.input-block {
-	width: 32%;
-	display: inline-block;
-	height: 66px;
 }
 
 .deepInit {
@@ -155,9 +149,75 @@ padding-right: 9px;
 }
 
 .main-content p {
-	padding: 12px 0px 0px 0px;
+	padding: 10px;
 	max-width: 575px;
 	margin: 0 auto;
+}
+
+.screen-fix-box {
+	border-style: solid;
+	border-width: 1px;
+	max-width: 782px;
+	width: 100%;
+}
+
+.individual-box {
+	border-style: solid;
+	border-width: 1px;
+	width: 100%;
+	height: 120px;
+}
+
+.block {
+	display: inline-block;
+}
+
+.name-box {
+	border-right: 1px solid;
+	width: 200px;
+	height: 120px;
+	vertical-align: top;
+}
+
+.selectedBox {
+	border-right: 1px solid;
+	height: 120px;
+	padding: 0px 5px 0px 5px;
+}
+
+.productBox {
+	vertical-align: top;
+}
+
+.amazonBox {
+	border-style: solid;
+	border-width: 1px;
+	height: 90px;
+	width: 110px;
+	display: auto;
+	vertical-align: top;
+	margin: 4px 0px 0px 5px;
+	border-radius: 5px;
+}
+
+.amazonButton {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px;
+	font-size: 15px;
+	width: 50px;
+}
+
+.amazonButton li {
+	display: inline-block;
+	list-style-type: none;
+	width: 50px;
+	background: tomato;
+	font-size: 7px;
+	margin: 0 auto;
+	padding-top: 5px;
+	border-radius: 7px;
+	text-align: center;
 }
 
 .main-footer {
@@ -188,3 +248,9 @@ padding-right: 9px;
 
 
 /*Float Clearfix*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+

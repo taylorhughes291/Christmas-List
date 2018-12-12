@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wrapp'd</title>
+		<link rel="stylesheet" href="CSS/listEdit.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<header class = "main-header">
+				<img class="small-logo" src="https://placeimg.com/150/85/tech" alt="Wrapp'd Logo Small">
+				<nav>
+					<li><a href="#">List Center</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Logout</a></li>
+				</nav>
+			</header>
+			<div class="main-content">
+				<h3><b id="giftList"></b></h3>
+				<section id="input">
+					<div id="screen-fix-box" class="screen-fix-box">
+						<div id="individual-box" class="individual-box">
+							<div id="name-box" class="name-box block">
+								<h4 id="recipientName" class="recipientName"></h4>
+								<p id="recipientPriorityBudget" class="recipientPriorityBudget"></p>
+							</div>
+							<div id="selectedBox" class="selectedBox block"></div>
+							<div id="productBox" class="productBox block">
+								<div id="amazonBox" class="amazonBox"></div>
+								<ul>
+									<li class="amazonButton">Select</li>
+									<li class="amazonButton">Delete</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="deepInitForm" name="deepInitializeRest"></div>
+					<ul id="submit" class="submit">
+						<li onclick="initializeDeepGrab()"><a href="#">Submit</a></li>
+					</ul>
+				</section>
+			</div>
+			<footer class = "main-footer">
+				<p><small>&copy; Cherboy Industries</small></p>
+			</footer>
+		</div>
+		<script src="JS/samplePackage.js"></script>
+		<script src="JS/listEditLoad.js"></script>
+	</body>
+</html>

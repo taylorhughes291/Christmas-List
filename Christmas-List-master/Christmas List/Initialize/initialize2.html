@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wrapp'd</title>
+		<link rel="stylesheet" href="CSS/initialize.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<header class = "main-header">
+				<img class="small-logo" src="https://placeimg.com/150/85/tech" alt="Wrapp'd Logo Small">
+				<nav>
+					<li><a href="#">List Center</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Logout</a></li>
+				</nav>
+			</header>
+			<div class="main-content">
+				<h3><b id="giftList"></b></h3>
+				<section id="input">
+					<form name="deepInitialize" class="deepInit">
+						<div class="input-block">	
+							Recipient Name:<br>
+							<input type="text" name="recipientName" id="recipientName0" class="input"><br>
+						</div>
+						<div class="input-block">
+							Recipient Priority:<br>
+							<select name="priority" id="recipientPriority0" class="styled-select input">
+								<option value=""></option>
+								<option value="Small">Small</option>
+								<option value="Medium">Medium</option>
+								<option value="Large">Large</option>
+							</select><br>
+						</div>
+						<div class="input-block">
+							Recipient Keywords:<br>
+							<input type="text" name="keywords" id="recipientKeywords0" class="input"><br>
+						</div>
+					</form>
+					<div id="deepInitForm" name="deepInitializeRest"></div>
+					<ul id="submit">
+						<li onclick="initializeDeepGrab()"><a href="#">Submit</a></li>
+					</ul>
+				</section>
+			</div>
+			<footer class = "main-footer">
+				<p><small>&copy; Cherboy Industries</small></p>
+			</footer>
+		</div>
+		<script src="JS/initialize2.js"></script>
+		<script src="JS/initialize2_submit.js"></script>
+	</body>
+</html>
